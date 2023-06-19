@@ -22,24 +22,6 @@ public class Program
             Console.ReadKey();
         }
     }
-    // public static void Main()
-    // {
-    //     // Crear un personaje aleatorio utilizando la fábrica de personajes
-    //     Personaje personajeAleatorio = FabricaDePersonajes.CrearPersonajeAleatorio();
 
-    //     // Mostrar los datos del personaje creado
-    //     Console.WriteLine("Personaje creado:");
-    //     Console.WriteLine($"Tipo: {personajeAleatorio.DatosPersonaje.Tipo1}");
-    //     Console.WriteLine($"Nombre: {personajeAleatorio.DatosPersonaje.Nombre1}");
-    //     Console.WriteLine($"Apodo: {personajeAleatorio.DatosPersonaje.Apodo1}");
-    //     Console.WriteLine($"Fecha de Nacimiento: {personajeAleatorio.DatosPersonaje.FechadeNacimiento1}");
-    //     Console.WriteLine($"Edad: {personajeAleatorio.DatosPersonaje.Edad1}");
-    //     Console.WriteLine($"Salud: {personajeAleatorio.DatosPersonaje.Salud1}");
-    //     Console.WriteLine($"Velocidad: {personajeAleatorio.CaracteristicasPersonaje.Velocidad1}");
-    //     Console.WriteLine($"Destreza: {personajeAleatorio.CaracteristicasPersonaje.Destreza1}");
-    //     Console.WriteLine($"Fuerza: {personajeAleatorio.CaracteristicasPersonaje.Fuerza1}");
-    //     Console.WriteLine($"Nivel: {personajeAleatorio.CaracteristicasPersonaje.Nivel1}");
-    //     Console.WriteLine($"Armadura: {personajeAleatorio.CaracteristicasPersonaje.Armadura1}");
-    //     Console.WriteLine($"Salud: {personajeAleatorio.CaracteristicasPersonaje.Salud1}");
-    // }
+
 }
