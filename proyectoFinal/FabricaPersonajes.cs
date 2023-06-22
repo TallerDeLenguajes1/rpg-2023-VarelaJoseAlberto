@@ -10,31 +10,31 @@ namespace EspacioFabricaPersonajes
         {
             // Crea un objeto Personaje con datos aleatorios
             Random random = new Random();
-            // Personaje personaje = new Personaje();
 
-            // Genera valores aleatorios para las características
             Datos datosPersonaje = new Datos(
                 ObtenerTipoAleatorio(),
                 ObtenerNombreAleatorio(),
                 ObtenerApodoAleatorio(),
                 ObtenerFechaNacimientoAleatoria(),
-                random.Next(0, 301),
-                100.0
+                random.Next(0, 301)
             );
 
-            Caracteristicas CaracteristicasPersonaje = new Caracteristicas(
+            Caracteristicas caracteristicasPersonaje = new Caracteristicas(
                 random.Next(1, 11),
                 random.Next(1, 6),
                 random.Next(1, 11),
                 random.Next(1, 11),
                 random.Next(1, 11),
-                100
+                100,
+                random.Next(1, 11),
+                random.Next(1, 11),
+                random.Next(1, 11)
             );
-            Personaje personaje = new Personaje(datosPersonaje, CaracteristicasPersonaje);
+
+            Personaje personaje = new Personaje(datosPersonaje, caracteristicasPersonaje);
             return personaje;
         }
 
-        // Aquí puedes agregar métodos auxiliares para generar datos aleatorios, como tipos, nombres, apodos, etc.
         private static string ObtenerTipoAleatorio()
         {
             string[] tipos = { "Guerrero", "Mago", "Arquero" };

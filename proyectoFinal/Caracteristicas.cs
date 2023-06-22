@@ -2,28 +2,30 @@ namespace CaracteristicasPersonaje
 {
     public class Caracteristicas
     {
-        private int Velocidad;// 1 a 10
-        private int Destreza; //1 a 5
-        private int Fuerza;//1 a 10
-        private int Nivel; //1 a 10
-        private int Armadura; //1 a 10
-        private int Salud; // 100
+        public int Velocidad1 { get; set; }
+        public int Destreza1 { get; set; }
+        public int Fuerza1 { get; set; }
+        public int Nivel1 { get; set; }
+        public int Armadura1 { get; set; }
+        public int Salud1 { get; set; }
+        public int Defensa1 { get; set; }
+        public int Precision1 { get; set; }
+        public int Evasion { get; set; }
 
-        public Caracteristicas(int velocidad, int destreza, int fuerza, int nivel, int armadura, int salud)
+        public Caracteristicas(int velocidad1, int destreza1, int fuerza1, int nivel1, int armadura1, int salud1, int defensa1, int precision1, int evasion)
         {
-            Velocidad1 = velocidad;
-            Destreza1 = destreza;
-            Fuerza1 = fuerza;
-            Nivel1 = nivel;
-            Armadura1 = armadura;
-            Salud1 = salud;
+            Velocidad1 = velocidad1;
+            Destreza1 = destreza1;
+            Fuerza1 = fuerza1;
+            Nivel1 = nivel1;
+            Armadura1 = armadura1;
+            Salud1 = salud1;
+            Defensa1 = defensa1;
+            Precision1 = precision1;
+            Evasion = evasion;
         }
 
-        public int Velocidad1 { get => Velocidad; set => Velocidad = value; }
-        public int Destreza1 { get => Destreza; set => Destreza = value; }
-        public int Fuerza1 { get => Fuerza; set => Fuerza = value; }
-        public int Nivel1 { get => Nivel; set => Nivel = value; }
-        public int Armadura1 { get => Armadura; set => Armadura = value; }
-        public int Salud1 { get => Salud; set => Salud = value; }
+
     }
+
 }

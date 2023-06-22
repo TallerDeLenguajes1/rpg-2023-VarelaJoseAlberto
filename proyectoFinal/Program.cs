@@ -1,11 +1,7 @@
-﻿using EspacioPersonajes;
-using EspacioFabricaPersonajes;
-using DatosPersonaje;
-using CaracteristicasPersonaje;
-using System;
-using EspecioMenu;
+﻿using EspecioMenu;
 public class Program
 {
+
     public static void Main(string[] args)
     {
         bool salir = false;
@@ -13,15 +9,16 @@ public class Program
         {
             Menu.MostrarMenu();
             string? opcion = Console.ReadLine();
-            Menu.ManejarOpcion(opcion!);
-            if (opcion == "6")
+            if (!string.IsNullOrEmpty(opcion))
             {
-                salir = true;
+                Menu.ManejarOpcion(opcion!);
+                if (opcion == "6")
+                {
+                    salir = true;
+                }
+                Console.WriteLine("\nPresione cualquier tecla para continuar...");
+                Console.ReadKey();
             }
-            Console.WriteLine("\nPresione cualquier tecla para continuar...");
-            Console.ReadKey();
         }
     }
-
-
 }

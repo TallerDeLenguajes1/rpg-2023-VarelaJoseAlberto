@@ -1,20 +1,19 @@
 using DatosPersonaje;
 using CaracteristicasPersonaje;
+using System.Text.Json.Serialization;
 namespace EspacioPersonajes
 {
     public class Personaje
     {
-        public Datos? datosPersonaje;
-        public Caracteristicas? caracteristicasPersonaje;
+        public Datos DatosPersonaje { get; set; }
+        public Caracteristicas CaracteristicasPersonaje { get; set; }
 
+        [JsonConstructor]
         public Personaje(Datos datosPersonaje, Caracteristicas caracteristicasPersonaje)
         {
-            this.datosPersonaje = datosPersonaje!;
-            this.caracteristicasPersonaje = caracteristicasPersonaje!;
+            DatosPersonaje = datosPersonaje!;
+            CaracteristicasPersonaje = caracteristicasPersonaje;
         }
-
-        public Datos? DatosPersonaje { get => datosPersonaje; set => datosPersonaje = value; }
-        public Caracteristicas? CaracteristicasPersonaje { get => caracteristicasPersonaje; set => caracteristicasPersonaje = value; }
 
 
 

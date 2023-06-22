@@ -1,30 +1,19 @@
-using System;
 namespace DatosPersonaje
 {
     public class Datos
     {
-        private String? Tipo;
-        private String? Nombre;
-        private String? Apodo;
-        private DateTime FechadeNacimiento;
-        private int Edad;
-        private double Salud;
-
-        public Datos(string? tipo, string? nombre, string? apodo, DateTime fechadeNacimiento, int edad, double salud)
+        public string Tipo1 { get; set; }
+        public string Nombre1 { get; set; }
+        public string Apodo1 { get; set; }
+        public DateTime FechadeNacimiento1 { get; set; }
+        public int Edad1 { get; set; }
+        public Datos(string tipo1, string nombre1, string apodo1, DateTime fechadeNacimiento1, int edad1)
         {
-            Tipo1 = tipo;
-            Nombre1 = nombre;
-            Apodo1 = apodo;
-            FechadeNacimiento1 = fechadeNacimiento;
-            Edad1 = edad;
-            Salud1 = salud;
+            Tipo1 = tipo1;
+            Nombre1 = nombre1;
+            Apodo1 = apodo1;
+            FechadeNacimiento1 = fechadeNacimiento1;
+            Edad1 = edad1;
         }
-
-        public string? Tipo1 { get => Tipo; set => Tipo = value; }
-        public string? Nombre1 { get => Nombre; set => Nombre = value; }
-        public string? Apodo1 { get => Apodo; set => Apodo = value; }
-        public DateTime FechadeNacimiento1 { get => FechadeNacimiento; set => FechadeNacimiento = value; }
-        public int Edad1 { get => Edad; set => Edad = value; }
-        public double Salud1 { get => Salud; set => Salud = value; }
     }
 }
